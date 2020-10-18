@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+};
+
+.flexbox {
+    margin-right: 5px;
+    width: 200px;
+    height: 150px;
+
+    list-style-type: none;
+};
+
+.flexbox:last-child {
+    margin-right: 0px;
+};
