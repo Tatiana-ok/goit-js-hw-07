@@ -17,11 +17,10 @@ const images = [
 ];
 
 const htmlNode = document.querySelector('#gallery');
-htmlNode.classList.add('container')
 
 const listOfImages = images.map(image => {
     const {url, alt} = image;
-    return `<li class ="flexbox"><img src = "${url}" alt = "${alt}"></li>`
+    return `<li><img src = "${url}" alt = "${alt}"></li>`
 }).join(" ");
 console.log(listOfImages);
 
