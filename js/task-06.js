@@ -1,18 +1,18 @@
 const input = document.querySelector('#validation-input');
 
-input.addEventListener('input', isValid);
-input.addEventListener('change', change);
+input.addEventListener('change', isValid);
 
 function isValid () {
-    if (input.value.length > 6){
+    console.log(input.value.length);
+    if (input.value.length == input.dataset.length) {
         input.classList.remove('invalid');
         input.classList.add('valid');
-    } if (input.value.length < 6) {
-       
+    } else {
         input.classList.add('invalid');
     };
 };
 
+input.addEventListener('input', change);
 
 function change () {
     input.classList.remove('valid');
